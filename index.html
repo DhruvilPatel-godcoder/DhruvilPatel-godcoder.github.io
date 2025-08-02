@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awesome Page</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: monospace;
+            display: flex;
+            flex-direction: column; /* Changed to column to stack elements */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+        }
+        .typing-text {
+            border-right: .15em solid orange;
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: 2em;
+            animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+        }
+        /* New styling for the paragraph and social links */
+        p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin-top: 20px;
+        }
+        .social-links a {
+            color: orange;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.5em;
+        }
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: orange; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="typing-text">Welcome to my new website.</h1>
+        <p>
+            I am a student passionate about technology and web development.
+            This is my first website created to showcase my skills and projects.
+        </p>
+        <div class="social-links">
+            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+</body>
+</html>
